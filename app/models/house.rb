@@ -1,3 +1,3 @@
-class House ApplicationRecord
+class House < ApplicationRecord
 has_many :characters
 end
