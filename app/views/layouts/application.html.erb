@@ -9,9 +9,10 @@
   </head>
 
   <body>
-
-    <h1> <%=link_to "HOMEX", houses_path %> </h1>
-    <h2> <%=link_to "ALL CHARACTERS", characters_path %> </h2>
+  <div class="navigation">
+    <div><h1> <%=link_to "HOMEX", houses_path %>             <-------></h1></div>
+    <div><h1> <%=link_to "ALL CHARACTERS", characters_path %> </h1></div>
+  </div>
     <%= yield %>
   </body>
 </html>

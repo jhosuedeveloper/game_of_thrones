@@ -1,2 +1,6 @@
 <h1> Character Name:  <%=@character.name %> </h1>
 <h1> Character Text:  <%=@character.text %> </h1>
+<h1> Belongs House :  <%=@character.house.name %> </h1>
+
+
+<h1> <%=link_to "EDIT CHARACTER", edit_house_character_path(@character.house, @character)  %>   </h1>

@@ -25,3 +25,14 @@
    font-family: "thrones";
    src: font-url('game_of_thrones.ttf') format("truetype");
  }
+
+
+.navigation{
+  background: grey;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+body{
+  background: #ADD8E6;
+}

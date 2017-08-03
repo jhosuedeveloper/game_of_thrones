@@ -9,5 +9,5 @@ root to: 'houses#index'
   end
 
 
-  resources :characters, only: [:index, :show, :new, :create]
+  resources :characters, only: [:index, :show, :new, :create, :update]
 end

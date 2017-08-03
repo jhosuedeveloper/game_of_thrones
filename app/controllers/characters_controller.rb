@@ -49,6 +49,35 @@ class CharactersController < ApplicationController
   end
 
 
+
+
+
+  def edit
+    @house = House.find(params[:house_id])
+    @character = @house.characters.find(params[:id])
+  end
+
+
+  def destroy
+    @house= House.find(params[:house_id])
+    @character=@house.characters.find(params[:id])
+    @character.destroy
+    redirect_to houses_path
+  end
+
+
+  def update
+
+    @house= House.find(params[:house_id])
+    @character=@house.characters.find(params[:id])
+    @character.update(passing_params2)
+    redirect_to house_characters_path(@house)
+  end
+
+
+
+
+
 private
 
 
