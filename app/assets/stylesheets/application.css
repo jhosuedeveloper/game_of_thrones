@@ -13,3 +13,15 @@
  *= require_tree .
  *= require_self
  */
+
+ /* assets/stylesheets */
+ @font-face {
+   font-family: "thrones";
+   src: url('game_of_thrones.ttf') format("truetype");
+ }
+
+ /* assets/fonts */
+ @font-face {
+   font-family: "thrones";
+   src: font-url('game_of_thrones.ttf') format("truetype");
+ }

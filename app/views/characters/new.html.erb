@@ -1,0 +1,33 @@
+<% if @house %>
+
+        <%=form_for [@house, @character] do |f|%>
+
+        <%= f.label  :name%>
+        <%=f.text_field :name%>
+
+        <%=f.label :text%>
+        <%=f.text_field :text%>
+
+
+
+        <%= f.submit "SUBMITX"%>
+        <%end%>
+
+<% else %>
+
+
+        <%=form_for @character do |f|%>
+
+        <%= f.label  :name%>
+        <%=f.text_field :name%>
+
+        <%=f.label :text%>
+        <%=f.text_field :text%>
+
+        <%=f.label :house%>
+        <%=f.text_field :house%>
+
+        <%= f.submit "SUBMITX"%>
+        <%end%>
+
+<% end%>

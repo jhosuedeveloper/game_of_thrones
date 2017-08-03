@@ -12,7 +12,7 @@ House.destroy_all
 
 
 houses = House.create([
-  {name:"Stark" , text: "winter is coming " evil:false},
+  {name:"Stark" , text: "winter is coming ", evil:false},
   {name:"Lannister", text: "hear me roar", evil:true},
   {name:"Lannister", text: "hear me roar", evil:true},
   {name:"Nights watch", text: "sword in the darkness", evil:true},

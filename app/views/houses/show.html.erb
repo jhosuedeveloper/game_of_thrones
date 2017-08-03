@@ -1,0 +1,30 @@
+<h1> House Name:  <%=@house.name %> </h1>
+<h1> House Text:  <%=@house.text %> </h1>
+<h1> House Evil:  <%=@house.evil.to_s %> </h1>
+
+
+
+<h1> <%=link_to "EDIT", edit_house_path(@house) %></h1>
+
+
+
+
+
+<ul>
+
+<% @house.characters.each do |character| %>
+
+<li>
+
+<%=link_to character.name, house_character_path(@house, character)%>
+</li>
+
+
+
+  <% end %>
+
+</ul>
+
+
+
+<h2><%=link_to "ADD A CHARACTER", new_house_character_path(@house) %> </h2>

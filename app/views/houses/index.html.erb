@@ -1,0 +1,18 @@
+<h1> Houses of Westeros </h1>
+
+<ul>
+
+
+  <%@houses.each do |house| %>
+  <li>
+    <%=link_to house.name, house_path(house)%>
+
+  </li>
+  <br>
+  <%end  %>
+
+
+</ul>
+
+
+<h1><%=link_to "NEW", new_house_path  %> </h1>

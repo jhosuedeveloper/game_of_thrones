@@ -1,0 +1,24 @@
+<%=form_for @house do |f| %>
+
+<%= f.label :name %>
+<%= f.text_field :name %>
+
+<%= f.label :text %>
+<%= f.text_field :text %>
+
+
+<%= f.label :evil %>
+<%= f.label :evil %>
+
+
+<%= f.submit "UPDATEX" %>
+
+
+<%end%>
+
+
+<%=form_for @house, method: :delete do |f| %>
+
+<%= f.submit "DELETEX" %>
+
+<%end%>
